@@ -1,80 +1,68 @@
-# Jessy Rosinta, Personal Branding Website
+# Personal Branding Website
 
-Tugas AFL-1 Web Development. Website personal branding berbasis **Laravel 12** yang memperkenalkan profil, karya, dan tulisan Jessy Rosinta.
+**AFL-1 Web Development**
 
-Portofolio memuat dua sistem yang sudah online, [TARA](https://tara-jr.com) (administrasi perjalanan dinas dan rapat luar kantor, dibangun dengan PHP native) dan [Garuda Bersinar](https://garudabersinar.com) (pendampingan rehabilitasi berkelanjutan, dibangun dengan Laravel), ditambah dua studi kasus perancangan.
+Nama: Jessy Rosinta  
+NIM: 0706012424022
 
-## Halaman
+## Deskripsi Proyek
 
-| URL | Isi |
-|---|---|
-| `/` | Perkenalan, bidang minat, dua proyek unggulan, cara kerja, dua artikel terbaru |
-| `/about` | Profil, pendidikan, pengalaman, keahlian |
-| `/portfolio` | Semua proyek, dengan filter "Sudah online" dan "Studi kasus" |
-| `/portfolio/{slug}` | Studi kasus per proyek: masalah, solusi, fitur, peran pengguna, teknologi |
-| `/blog` | Lima artikel, dengan filter kategori |
-| `/blog/{slug}` | Detail artikel dan rekomendasi bacaan lain |
-| `/contact` | Email, GitHub, LinkedIn, dan tautan ke sistem yang sudah online |
+Website ini dibuat untuk memenuhi tugas AFL-1 mata kuliah Web Development dengan menggunakan framework Laravel.
 
-Halaman yang tidak ada menampilkan halaman 404 buatan sendiri.
+Website ini berisi profil pribadi, latar belakang pendidikan, pengalaman, portofolio proyek, serta beberapa artikel yang berkaitan dengan teknologi dan pengembangan web.
 
-## Penerapan konsep Laravel
+Melalui website ini, saya mencoba menerapkan materi Laravel yang telah dipelajari, mulai dari routing, controller, view, Blade template, layout, hingga components.
 
-| Konsep | Lokasi | Penerapan |
-|---|---|---|
-| Routing | `routes/web.php` | Tujuh rute bernama, dua di antaranya berparameter: `/portfolio/{slug}` dan `/blog/{slug}` |
-| Controller | `app/Http/Controllers/PageController.php` | Satu method per halaman. Slug yang tidak ditemukan menghasilkan 404 lewat `abort_if` |
-| Pengambilan data | `app/Support/ContentRepository.php` | Membaca JSON, mengurutkan artikel, mencari per slug, menyaring proyek per jenis |
-| View | `resources/views/pages/` | Home, About, Portfolio, detail proyek, Blog, detail artikel, Contact |
-| Blade | seluruh `.blade.php` | `@extends`, `@section`, `@yield`, `@foreach`, `@forelse`, `@if`, `{{ }}` |
-| Layout | `resources/views/layouts/app.blade.php` | Kerangka HTML, meta, navbar, footer, dan CSS/JS yang dipakai semua halaman |
-| Blade Components | `resources/views/components/` | `navbar`, `footer`, `button`, `tag`, `status-pill`, `page-hero`, `section-heading`, `project-card`, `project-feature`, `article-card` |
-| Berbagi data | `app/Providers/AppServiceProvider.php` | `View::share()` untuk `$profile` dan `$liveProjects` yang dipakai navbar, footer, dan halaman error |
-| Halaman error | `resources/views/errors/404.blade.php` | Tampilan 404 yang konsisten dengan layout |
-| Tes | `tests/Feature/WebsitePagesTest.php` | Semua halaman, semua detail artikel dan proyek, 404, dan jumlah data minimum |
+## Halaman Website
 
-Alur data: `Route` lalu `PageController` lalu `ContentRepository` lalu `View` lalu `Component`.
+Website ini memiliki beberapa halaman utama:
 
-## Data dummy
+1. **Home** – Menampilkan perkenalan singkat, bidang yang diminati, dan beberapa proyek unggulan.
+2. **About** – Berisi informasi tentang diri saya, pendidikan, pengalaman, dan keahlian.
+3. **Portfolio** – Menampilkan empat proyek, termasuk TARA dan Garuda Bersinar, serta dua studi kasus.
+4. **Blog** – Berisi lima artikel mengenai teknologi, pengembangan web, dan pengalaman belajar. Setiap artikel memiliki halaman detail.
+5. **Contact** – Menampilkan informasi kontak dan tautan media sosial profesional.
 
-Data ada di `resources/data/`. Untuk menggantinya cukup mengedit JSON, tanpa menyentuh Blade.
+## Implementasi Laravel
 
-| File | Isi |
-|---|---|
-| `profile.json` | Identitas, pendidikan, pengalaman, keahlian, kontak |
-| `projects.json` | 4 proyek: 2 sistem online dan 2 studi kasus. Field `type` (`live` atau `study`) menentukan filter |
-| `articles.json` | 5 artikel dengan isi lengkap |
+Beberapa fitur Laravel yang digunakan dalam proyek ini adalah:
 
-Ilustrasi proyek dan artikel ada di `public/assets/img/` berupa SVG orisinal. Isinya ilustrasi, bukan tangkapan layar aplikasi, karena TARA dan Garuda Bersinar memuat data pengguna.
+- **Routing:** Mengatur alamat URL dan navigasi antarhalaman melalui `routes/web.php`.
+- **Controller:** Menggunakan `PageController.php` untuk mengatur halaman dan data yang ditampilkan.
+- **View dan Blade:** Menggunakan file `.blade.php` untuk menampilkan halaman dengan sintaks seperti `@foreach`, `@if`, dan `{{ }}`.
+- **Layout:** Menggunakan satu layout utama agar tampilan navbar, footer, dan halaman tetap konsisten.
+- **Blade Components:** Digunakan untuk membuat elemen yang dapat dipakai kembali, seperti navbar, tombol, kartu portofolio, dan kartu artikel.
 
-## Desain
+Data profil, portofolio, dan blog disimpan dalam file JSON pada folder `resources/data`, sehingga kontennya dapat diubah tanpa harus mengedit setiap halaman.
 
-Bahasa visualnya mengambil dari dunia berkas administrasi: status berkas, stempel "Rampung", dan register. Palet memakai biru tinta, biru TARA, dan emas Garuda di atas kertas abu-biru. Huruf memakai Bricolage Grotesque untuk judul dan Public Sans untuk isi, dimuat dari Google Fonts dengan cadangan font sistem. Layout responsif untuk desktop, tablet, dan ponsel, dengan fokus keyboard yang terlihat dan animasi yang mengikuti pengaturan "kurangi gerakan".
+## Cara Menjalankan Website
 
-Semua halaman tetap bisa dipakai tanpa JavaScript. Skrip di `public/assets/js/site.js` hanya menambahkan menu mobile, filter, tombol salin email, dan penanda progres baca.
+Pastikan PHP minimal versi 8.2 dan Composer sudah terinstal.
 
-## Sebelum dipublikasikan
-
-Beberapa isi masih contoh dan perlu diganti dengan data asli di `resources/data/profile.json`:
-
-- [ ] `contact.github` dan `contact.linkedin` masih tautan umum. Ganti dengan alamat profil sendiri.
-- [ ] `contact.email` berisi email dari CV. Ganti bila tidak ingin dipublikasikan.
-- [ ] `avatar.svg` di `public/assets/img/` bisa diganti foto profil.
-- [ ] Pastikan tidak ada informasi yang belum boleh dipublikasikan pada deskripsi kedua sistem.
-
-## Unggah ke GitHub
+Buka terminal pada folder proyek, kemudian jalankan:
 
 ```bash
-git init
-git add .
-git commit -m "Initial commit: personal branding website Laravel"
-git branch -M main
-git remote add origin https://github.com/USERNAME/personal-branding-laravel.git
-git push -u origin main
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan serve
 ```
 
-Ganti `USERNAME` dengan username GitHub. File `.env` sudah ada di `.gitignore`, jadi tidak ikut terunggah.
+Setelah server berjalan, buka alamat berikut melalui browser:
+
+http://127.0.0.1:8000
+
+Untuk melihat daftar route dan menjalankan pengujian, gunakan:
+
+```bash
+php artisan route:list
+php artisan test
+```
 
 ## Penggunaan AI
 
-AI digunakan sebagai alat bantu untuk merancang tampilan, menyusun struktur Laravel (routing, controller, view, layout, komponen Blade), menulis rancangan teks, dan menyusun dokumentasi ini. Seluruh kode perlu dibaca, dijalankan, dan dipahami sebelum dikumpulkan, terutama alur `Route` ke `PageController` ke `ContentRepository` ke `View`, cara kerja `@foreach` dan `@forelse`, serta cara komponen Blade menerima data lewat `@props`. Isi portofolio bersumber dari proposal inovasi TARA, laporan Tim Efektif, dan CV milik pemilik website.
+Dalam pengerjaan tugas ini, saya menggunakan AI sebagai alat bantu untuk menyusun struktur kode, pengembangan tampilan, dan memahami penerapan fitur-fitur Laravel. Proyek ini juga menjadi sarana bagi saya untuk mempelajari hubungan antara routing, controller, view, dan Blade dalam pembuatan website.
+
+## Penutup
+
+Melalui tugas ini, saya dapat mempelajari bagaimana Laravel digunakan untuk membangun website dengan struktur yang lebih terorganisasi. Selain sebagai pemenuhan tugas kuliah, website ini juga dapat dikembangkan kembali sebagai portofolio pribadi.

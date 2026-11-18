@@ -61,7 +61,11 @@ php artisan test
 
 ## Penggunaan AI
 
-Dalam pengerjaan tugas ini, saya menggunakan AI sebagai alat bantu untuk menyusun struktur kode, pengembangan tampilan, dan memahami penerapan fitur-fitur Laravel. Proyek ini juga menjadi sarana bagi saya untuk mempelajari hubungan antara routing, controller, view, dan Blade dalam pembuatan website.
+Dalam pengerjaan tugas ini, saya menggunakan AI sebagai alat bantu dalam penyusunan struktur kode, pengembangan tampilan website, dan penerapan fitur Laravel.
+
+Selain itu, seluruh konten artikel pada halaman Blog dibuat menggunakan AI sebagai data dummy untuk memenuhi kebutuhan tugas. Artikel tersebut digunakan sebagai contoh konten dalam penerapan fitur daftar artikel, pengelompokan kategori, dan halaman detail blog.
+
+Penggunaan AI dalam proyek ini juga membantu saya memahami implementasi routing, controller, Blade, layout, dan components pada Laravel.
 
 ## Penutup
 

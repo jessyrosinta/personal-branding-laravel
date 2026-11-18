@@ -18,28 +18,6 @@ Portofolio memuat dua sistem yang sudah online, [TARA](https://tara-jr.com) (adm
 
 Halaman yang tidak ada menampilkan halaman 404 buatan sendiri.
 
-## Menjalankan
-
-Panduan lengkap dari nol sampai unggah ke GitHub ada di [PANDUAN_LANGKAH.md](PANDUAN_LANGKAH.md). Ringkasnya:
-
-Kebutuhan: PHP 8.2 atau lebih baru, Composer, dan browser modern. Tidak perlu database, Node.js, maupun `npm install`.
-
-```bash
-composer install
-cp .env.example .env
-php artisan key:generate
-php artisan serve
-```
-
-Di Windows PowerShell, ganti `cp` dengan `Copy-Item .env.example .env`. Lalu buka http://127.0.0.1:8000.
-
-Pemeriksaan cepat:
-
-```bash
-php artisan route:list
-php artisan test
-```
-
 ## Penerapan konsep Laravel
 
 | Konsep | Lokasi | Penerapan |

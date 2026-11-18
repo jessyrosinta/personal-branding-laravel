@@ -1,0 +1,77 @@
+[
+  {
+    "slug": "mengenal-routing-laravel",
+    "title": "Mengenal Routing Laravel dari Nol",
+    "category": "Laravel",
+    "date": "2026-11-12",
+    "reading_time": "4 menit",
+    "excerpt": "Memahami bagaimana URL diarahkan ke Controller dan bagaimana halaman Laravel dibuka oleh pengguna.",
+    "image": "assets/img/blog-routing.svg",
+    "content": [
+      "Ketika kita membuka alamat sebuah website, server perlu mengetahui halaman apa yang harus ditampilkan. Di Laravel, pengaturan tersebut dilakukan melalui routing. Setiap route menghubungkan URL dengan fungsi yang akan memberikan respons.",
+      "File routes/web.php biasanya digunakan untuk menentukan route halaman web. Misalnya, Route::get(\"/about\", [PageController::class, \"about\"]) akan memanggil method about di PageController ketika pengguna membuka /about.",
+      "Menamai route juga memudahkan pengembangan. Dengan route bernama, kita dapat membuat tautan menggunakan helper route() dan tidak perlu mengetik alamat URL berulang kali.",
+      "Dalam proyek portofolio ini, halaman beranda, tentang, portofolio, blog, detail artikel, dan kontak masing-masing mempunyai route yang jelas."
+    ]
+  },
+  {
+    "slug": "mengapa-blade-components-membantu",
+    "title": "Mengapa Blade Components Membantu?",
+    "category": "Laravel",
+    "date": "2026-11-09",
+    "reading_time": "3 menit",
+    "excerpt": "Navbar, footer, dan card tidak perlu ditulis berkali-kali. Blade Components membantu menjaga konsistensi.",
+    "image": "assets/img/blog-components.svg",
+    "content": [
+      "Ketika membuat website dengan beberapa halaman, bagian seperti tombol, kartu artikel, dan navigasi sering muncul berulang. Menyalin kode HTML secara manual memang cepat pada awalnya, tetapi sulit dirawat ketika desain berubah.",
+      "Blade Components memungkinkan kita memisahkan elemen yang sering digunakan ke dalam file komponen. Misalnya, satu file x-project-card dapat menerima data proyek yang berbeda untuk setiap kartu.",
+      "Keuntungannya adalah konsistensi visual dan kemudahan perbaikan. Jika ukuran kartu atau tampilan label diubah, kita cukup mengedit komponennya satu kali.",
+      "Dalam proyek ini terdapat komponen navigasi, footer, kartu portofolio, dan kartu artikel. Semuanya dipanggil kembali pada beberapa halaman melalui sintaks x-component."
+    ]
+  },
+  {
+    "slug": "data-yang-baik-membantu-keputusan",
+    "title": "Data yang Baik Membantu Keputusan",
+    "category": "Digital Operations",
+    "date": "2026-11-04",
+    "reading_time": "5 menit",
+    "excerpt": "Pelaporan yang jelas bukan soal banyaknya tabel, tetapi kemampuan mengubah data menjadi informasi.",
+    "image": "assets/img/blog-data.svg",
+    "content": [
+      "Dalam pekerjaan operasional, informasi sering tersebar di beberapa dokumen atau aplikasi. Kesulitan muncul ketika pengguna harus membandingkan data yang tidak memiliki struktur konsisten.",
+      "Langkah awal yang penting adalah menentukan informasi apa yang benar-benar diperlukan oleh pembaca. Setelah itu, data dapat disusun menggunakan kategori, indikator utama, dan pembaruan yang mudah diikuti.",
+      "Dashboard yang baik tidak harus memiliki grafik yang rumit. Justru tampilan sederhana dengan label, satuan, dan hierarki yang jelas sering lebih bermanfaat.",
+      "Teknologi menjadi bermakna ketika membantu orang melihat kondisi, memahami masalah, lalu mengambil keputusan yang lebih tepat."
+    ]
+  },
+  {
+    "slug": "mendesain-alur-yang-mudah-digunakan",
+    "title": "Mendesain Alur yang Mudah Digunakan",
+    "category": "UI/UX",
+    "date": "2026-10-29",
+    "reading_time": "4 menit",
+    "excerpt": "Pengalaman pengguna dimulai dengan memahami langkah, kebingungan, dan tujuan nyata pengguna.",
+    "image": "assets/img/blog-ux.svg",
+    "content": [
+      "Antarmuka yang indah belum tentu mudah dipakai. Pengguna biasanya datang untuk menyelesaikan pekerjaan, bukan untuk mempelajari struktur aplikasi yang rumit.",
+      "Sebelum menggambar tampilan, kita dapat menuliskan tujuan pengguna dan urutan langkah yang harus mereka lalui. Dari sana, kita bisa mengurangi klik yang tidak perlu dan memberikan umpan balik di setiap tahap.",
+      "Konsistensi warna, ukuran tombol, dan penamaan menu membuat pengguna lebih percaya diri. Desain responsif juga penting karena halaman bisa dibuka dari ponsel maupun laptop.",
+      "Saya menyukai pendekatan yang berangkat dari masalah nyata, lalu menguji apakah rancangan dapat dipahami oleh orang yang baru pertama kali menggunakannya."
+    ]
+  },
+  {
+    "slug": "belajar-git-dan-github",
+    "title": "Belajar Git dan GitHub untuk Proyek Pertama",
+    "category": "Learning Notes",
+    "date": "2026-10-21",
+    "reading_time": "4 menit",
+    "excerpt": "Mengenal commit, repository, dan pentingnya mencatat perubahan selama membangun website.",
+    "image": "assets/img/blog-git.svg",
+    "content": [
+      "Saat sebuah proyek berkembang, kita sering melakukan perubahan yang ternyata perlu diperiksa kembali. Git membantu mencatat riwayat perubahan tersebut secara terstruktur.",
+      "Repository merupakan tempat penyimpanan kode dan catatan perubahannya. Kita dapat menyiapkannya dengan git init, kemudian menyimpan perkembangan pekerjaan menggunakan git add dan git commit.",
+      "GitHub menyediakan platform untuk menyimpan repository secara online dan berkolaborasi. Sebelum mengunggah proyek, penting memeriksa agar file .env, kredensial, dan data rahasia tidak ikut ter-push.",
+      "Bagi pemula, menggunakan commit dengan pesan yang jelas sudah menjadi kebiasaan baik. Selain memudahkan kolaborasi, riwayat commit juga menunjukkan proses belajar dan pengerjaan proyek."
+    ]
+  }
+]

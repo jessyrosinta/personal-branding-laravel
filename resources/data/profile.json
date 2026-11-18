@@ -1,0 +1,134 @@
+{
+  "name": "Jessy Rosinta",
+  "initials": "JR",
+  "role": "Finance Controller dan Data Analyst, BNN RI",
+  "headline": "Alur kerja yang rumit, dibuat bisa dilacak.",
+  "tagline": "Saya membangun aplikasi web yang membuat administrasi dan pendampingan lebih tertib, transparan, dan mudah dipantau.",
+  "focus": [
+    "Alur kerja digital",
+    "Dashboard dan pelaporan",
+    "Pengembangan web (Laravel)",
+    "Keuangan publik"
+  ],
+  "summary": "Saya bekerja di BNN sebagai finance controller dan data analyst. Di luar tugas harian, saya membangun dua aplikasi web yang sudah online: TARA dengan PHP native untuk administrasi perjalanan dinas, dan Garuda Bersinar dengan Laravel untuk pendampingan rehabilitasi berkelanjutan.",
+  "description": "Lebih dari enam tahun saya bekerja di lembaga pemerintah, mulai dari pelaksanaan anggaran dan perbendaharaan sampai analisis data program rehabilitasi. Dari sana saya belajar bahwa sistem yang baik dimulai dari alur kerja yang nyata: siapa mengerjakan apa, dokumen apa yang dibutuhkan, dan status apa yang perlu terlihat oleh semua pihak. Sambil menempuh studi Teknologi Informasi, saya membangun gagasan itu sendiri menjadi aplikasi yang dipakai.",
+  "location": "Jakarta, Indonesia",
+  "available_for": "Terbuka untuk magang, kolaborasi proyek, dan diskusi tentang digitalisasi proses kerja.",
+
+  "education": [
+    {
+      "period": "2025 sampai sekarang",
+      "title": "Universitas Ciputra, Teknologi Informasi",
+      "text": "Sedang menempuh studi. Mendalami pemrograman, basis data, analisis sistem, dan pengembangan web dengan Laravel."
+    },
+    {
+      "period": "2021 sampai 2024",
+      "title": "Universitas Indonesia, Sarjana Ekonomi",
+      "text": "Skripsi tentang model pengelolaan persediaan berbasis teknologi informasi di industri makanan dan minuman untuk efisiensi biaya."
+    },
+    {
+      "period": "2016 sampai 2019",
+      "title": "PKN STAN, Diploma III Akuntansi",
+      "text": "Lulus dengan beasiswa penuh dari Kementerian Keuangan Republik Indonesia."
+    }
+  ],
+
+  "experience": [
+    {
+      "period": "2026",
+      "title": "Pengembang Garuda Bersinar",
+      "org": "Platform pendampingan rehabilitasi berkelanjutan, Tim Efektif BNN",
+      "text": "Membangun seluruh aplikasi dengan Laravel, dari akun berjenjang, pemantauan keterpulihan terjadwal, dan pembelajaran, sampai dashboard, laporan, dan jejak audit. Aplikasi sudah terpasang di lingkungan produksi dan diujicobakan bersama Satker dan Wilayah pada 16 dan 17 September 2026."
+    },
+    {
+      "period": "2026",
+      "title": "Pengembang TARA",
+      "org": "Administrasi perjalanan dinas dan rapat luar kantor",
+      "text": "Berawal dari tugas kuliah, saya mengembangkan TARA dengan PHP native agar dapat dipakai di kantor. Saya juga menyusun proposal inovasi 46 halaman yang memuat tujuan, tujuh modul, lima peran pengguna, alur proses, dan rencana pengembangan."
+    },
+    {
+      "period": "2022 sampai sekarang",
+      "title": "Finance Controller dan Bendahara Pengeluaran Pembantu",
+      "org": "Direktorat Pascarehabilitasi, BNN RI",
+      "text": "Mengelola administrasi pengeluaran negara: pencairan dana, UP/TUP, verifikasi transaksi, pertanggungjawaban, rekonsiliasi anggaran, dan dokumentasi untuk pemeriksaan. Sebelumnya mengelola pelaksanaan anggaran sekitar Rp7 miliar dan memimpin tim empat orang."
+    },
+    {
+      "period": "2022 sampai sekarang",
+      "title": "Data Analyst Program Rehabilitasi",
+      "org": "BNN RI",
+      "text": "Membangun basis data real-time untuk lebih dari 30.000 klien rehabilitasi, mengoordinasikan alur data dengan 207 titik koordinasi daerah dan enam balai rehabilitasi, serta menyusun dashboard dan laporan untuk pimpinan."
+    },
+    {
+      "period": "2021 sampai 2023",
+      "title": "Pemilik waralaba Menantea dan Es Teh Indonesia",
+      "org": "Wirausaha",
+      "text": "Mengelola operasional harian, mulai dari penjualan, anggaran, staf, persediaan, sampai pelaporan."
+    },
+    {
+      "period": "2020 sampai 2021",
+      "title": "Asisten Pribadi Deputi Bidang Rehabilitasi",
+      "org": "BNN RI",
+      "text": "Mengoordinasikan jadwal dan korespondensi pimpinan, serta menyusun bahan paparan dan laporan."
+    }
+  ],
+
+  "certifications": [
+    "Bendahara Pengeluaran bersertifikat, Kementerian Keuangan RI",
+    "Brevet Pajak A dan B"
+  ],
+
+  "skill_groups": [
+    {
+      "group": "Membangun web",
+      "items": ["Laravel dan Blade", "PHP native", "HTML dan CSS", "Git dan GitHub", "SDLC dan analisis sistem"]
+    },
+    {
+      "group": "Data dan pelaporan",
+      "items": ["SQL, MySQL, MariaDB", "Python", "Excel tingkat lanjut", "Dashboard dan laporan manajemen"]
+    },
+    {
+      "group": "Keuangan publik",
+      "items": ["Pelaksanaan anggaran", "Perbendaharaan (UP/TUP)", "Rekonsiliasi keuangan", "PPh 21, SAKTI, Coretax"]
+    },
+    {
+      "group": "Desain dan komunikasi",
+      "items": ["Pemetaan alur kerja", "Canva dan Photoshop", "Penulisan proposal dan dokumentasi", "Sosialisasi dan uji coba pengguna"]
+    }
+  ],
+
+  "process": [
+    {
+      "title": "Pahami alur yang sebenarnya",
+      "text": "Saya mulai dari cara orang bekerja hari ini: dokumen apa yang beredar, siapa menunggu siapa, dan di mana pekerjaan tertahan."
+    },
+    {
+      "title": "Petakan peran dan status",
+      "text": "Setiap pihak mendapat kewenangan yang jelas, dan setiap tahap punya status yang bisa dilihat dan ditelusuri."
+    },
+    {
+      "title": "Bangun dan uji bersama pengguna",
+      "text": "Aplikasi diuji dengan alur normal, pembatasan akses, dan skenario sulit sebelum dipasang di lingkungan produksi."
+    },
+    {
+      "title": "Dampingi sampai terpakai",
+      "text": "Sosialisasi, uji coba, dan perbaikan berjalan terus, karena sistem baru hanya berguna kalau benar-benar dipakai."
+    }
+  ],
+
+  "hero_flow": {
+    "document": "Berkas perjalanan dinas",
+    "caption": "Contoh alur di TARA (ilustrasi)",
+    "stages": [
+      { "actor": "Peserta", "text": "Mengajukan dan mengunggah dokumen", "status": "Diajukan" },
+      { "actor": "Bendahara/BPP", "text": "Memeriksa berkas dan menetapkan biaya", "status": "Diverifikasi" },
+      { "actor": "PPK", "text": "Memberi persetujuan akhir", "status": "Divalidasi" },
+      { "actor": "Sistem", "text": "Mengunci data dan dokumen sebagai arsip", "status": "Rampung" }
+    ]
+  },
+
+  "contact": {
+    "email": "jessytobing2@gmail.com",
+    "github": "https://github.com/",
+    "linkedin": "https://www.linkedin.com/"
+  }
+}

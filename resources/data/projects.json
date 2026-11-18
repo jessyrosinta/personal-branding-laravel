@@ -1,0 +1,302 @@
+[
+  {
+    "slug": "tara",
+    "type": "live",
+    "theme": "blue",
+    "title": "TARA",
+    "full_title": "Travel Authorization, Reporting & Archival",
+    "category": "Sistem administrasi",
+    "year": "2026",
+    "status": "Online",
+    "role": "Perancang dan pengembang",
+    "origin": "Berawal sebagai tugas kuliah, lalu dikembangkan agar dapat dipakai di kantor.",
+    "organization": "Direktorat Pascarehabilitasi, BNN RI",
+    "url": "https://tara-jr.com",
+    "url_label": "tara-jr.com",
+    "access_note": "Aplikasi ini untuk penggunaan internal. Halaman login bisa dibuka publik, sedangkan isinya hanya untuk pengguna terdaftar, jadi halaman ini memakai ilustrasi dan tidak menampilkan data asli.",
+    "subtitle": "Administrasi perjalanan dinas dan rapat luar kantor, dari pengajuan sampai arsip.",
+    "description": "Satu alur untuk pengajuan, verifikasi bendahara, validasi PPK, pelaporan, dan pengarsipan, menggantikan berkas dan pesan yang tersebar di banyak tempat.",
+    "image": "assets/img/project-tara.svg",
+    "image_bg": "#1a2f8f",
+    "technologies": [
+      "PHP native",
+      "Alur berbasis status",
+      "Hak akses per peran",
+      "Cetak dokumen otomatis",
+      "Ekspor Excel"
+    ],
+    "facts": [
+      {
+        "value": "7",
+        "label": "modul, dari autentikasi sampai dashboard"
+      },
+      {
+        "value": "5",
+        "label": "peran pengguna dengan kewenangan berbeda"
+      },
+      {
+        "value": "2",
+        "label": "alur utama: perjalanan dinas dan rapat luar kantor"
+      }
+    ],
+    "problem": [
+      "Administrasi perjalanan dinas dan rapat luar kantor melibatkan peserta, operator, bendahara, dan PPK. Selama ini koordinasinya bergantung pada pesan, telepon, dan pertukaran berkas, sehingga surat tugas, tiket, daftar hadir, nominatif, dan bukti pembayaran tersebar di banyak media.",
+      "Akibatnya status pekerjaan sulit dilihat, dokumen diperiksa berulang, dan data harus diketik ulang setiap kali dokumen dicetak atau laporan disusun."
+    ],
+    "solution": [
+      "TARA memindahkan seluruh tahapan ke satu platform. Setiap pengajuan berjalan lewat status yang jelas, tiap peran hanya melihat dan mengerjakan bagiannya, dan data yang sudah diinput dipakai ulang untuk verifikasi, cetak dokumen, dan laporan.",
+      "Setelah disetujui PPK dan ditandai rampung, data serta dokumen dikunci agar jejak administrasi terjaga. Jika perlu koreksi, status rampung bisa dibuka kembali."
+    ],
+    "features": [
+      {
+        "title": "Alur berbasis status",
+        "text": "Diajukan, diverifikasi, divalidasi, hingga rampung. Posisi proses selalu terlihat oleh pihak yang berwenang."
+      },
+      {
+        "title": "Dokumen terpusat",
+        "text": "Surat tugas, tiket, bukti pembayaran, dan lampiran lain diunggah per jenis dan tersimpan di satu tempat."
+      },
+      {
+        "title": "Penetapan biaya rinci",
+        "text": "Uang harian, transportasi, taksi, dan akomodasi, dengan metode lumpsum maupun at cost."
+      },
+      {
+        "title": "Cetak dokumen otomatis",
+        "text": "DPR, kwitansi, nominatif, SPPD, absen, dan amplop tersusun dari data sistem tanpa mengetik ulang."
+      },
+      {
+        "title": "Dashboard per peran",
+        "text": "Ringkasan pekerjaan, kalender aktivitas, dan prioritas tindak lanjut sesuai peran aktif pengguna."
+      },
+      {
+        "title": "Laporan dan ekspor",
+        "text": "Rekap perjalanan dinas dan rapat dengan filter, pencarian, dan ekspor ke Excel."
+      }
+    ],
+    "access_title": "Peran pengguna",
+    "access": [
+      {
+        "name": "Peserta",
+        "text": "Mengajukan perjalanan dinas, mengunggah dokumen, dan memantau status."
+      },
+      {
+        "name": "Operator",
+        "text": "Melengkapi detail rapat, mengelola nominatif peserta, dan mengirim pengajuan ke bendahara."
+      },
+      {
+        "name": "Bendahara/BPP",
+        "text": "Memverifikasi, menetapkan biaya, mencatat pembayaran, dan meneruskan ke PPK."
+      },
+      {
+        "name": "PPK",
+        "text": "Melakukan validasi akhir dengan persetujuan atau penolakan disertai catatan."
+      },
+      {
+        "name": "Admin",
+        "text": "Mengelola akun, peran, dan penugasan anggaran."
+      }
+    ],
+    "roadmap_title": "Rencana pengembangan",
+    "roadmap": [
+      "Notifikasi setiap perubahan status",
+      "Dashboard analitik yang lebih mendalam",
+      "Parameter biaya berdasarkan SBM Kementerian Keuangan",
+      "Integrasi dengan SIDINAR BNN",
+      "Jejak audit yang lebih lengkap"
+    ]
+  },
+  {
+    "slug": "garuda-bersinar",
+    "type": "live",
+    "theme": "gold",
+    "title": "Garuda Bersinar",
+    "full_title": "Gerakan Rehabilitasi Unggul dalam Aksi Bersih Narkoba",
+    "category": "Platform pendampingan",
+    "year": "2026",
+    "status": "Online",
+    "role": "Pengembang tunggal",
+    "origin": "Dibangun sendiri dari awal dengan Laravel.",
+    "organization": "Tim Efektif, Direktorat Pascarehabilitasi BNN",
+    "url": "https://garudabersinar.com",
+    "url_label": "garudabersinar.com",
+    "access_note": "Halaman depan dan login bisa dibuka publik. Karena aplikasi ini memuat data peserta rehabilitasi, halaman ini hanya memakai ilustrasi dan tidak menampilkan data apa pun.",
+    "subtitle": "Pendampingan berkelanjutan untuk peserta setelah menyelesaikan rehabilitasi.",
+    "description": "Platform web untuk memantau keterpulihan peserta secara berkala, lengkap dengan pembelajaran mandiri, komunitas, dan jejaring layanan.",
+    "image": "assets/img/project-garuda.svg",
+    "image_bg": "#12203b",
+    "technologies": [
+      "Laravel",
+      "Web responsif",
+      "Hak akses berjenjang",
+      "Penjadwal otomatis",
+      "Jejak audit"
+    ],
+    "facts": [
+      {
+        "value": "6",
+        "label": "pilar layanan, dari pemulihan mandiri sampai akses konsultasi"
+      },
+      {
+        "value": "5",
+        "label": "tingkat dashboard sesuai peran dan cakupan"
+      },
+      {
+        "value": "3 dan 6",
+        "label": "bulan setelah terminasi, jadwal pemantauan BARC dan Torehan Pena Raja"
+      }
+    ],
+    "problem": [
+      "Kebutuhan rehabilitasi berkelanjutan tidak cukup dipenuhi oleh aplikasi pembelajaran saja. Petugas perlu tahu apakah pemantauan keterpulihan sudah dilaksanakan, bagaimana hasilnya, dan siapa yang perlu ditindaklanjuti.",
+      "Di sisi lain, peserta dengan literasi digital dan perangkat yang beragam tidak boleh kehilangan haknya untuk dipantau hanya karena kendala teknis."
+    ],
+    "solution": [
+      "Garuda Bersinar menghubungkan pembelajaran, pemantauan, pendampingan, komunitas, dan akses layanan dalam satu ekosistem. Jadwal pemantauan terbentuk otomatis dari tanggal terminasi, dan setiap statusnya bisa dilihat petugas: belum waktunya, terbuka, terlambat, atau selesai.",
+      "Untuk menjaga privasi, akses dibatasi sesuai peran dan cakupan wilayah. Dashboard pimpinan hanya menampilkan data agregat tanpa identitas peserta."
+    ],
+    "features": [
+      {
+        "title": "Pemantauan terjadwal",
+        "text": "BARC untuk peserta dan Torehan Pena Raja untuk keluarga, pada bulan ke-3 dan ke-6 setelah terminasi."
+      },
+      {
+        "title": "Pengisian dibantu petugas",
+        "text": "Jalan keluar bagi peserta yang terkendala perangkat atau sinyal, lengkap dengan alasan dan jejak pelaksana."
+      },
+      {
+        "title": "Self Recovery dan pelatihan",
+        "text": "Materi mandiri dengan progres tersimpan, kuis, dan sertifikat elektronik."
+      },
+      {
+        "title": "Jejaring dan komunitas",
+        "text": "Informasi layanan menurut cakupan nasional, wilayah, atau Satker, serta ruang dukungan sebaya yang dimoderasi."
+      },
+      {
+        "title": "Dashboard dan laporan berjenjang",
+        "text": "Dari tindakan harian Satker sampai gambaran nasional, dengan peserta unik dan episode rehabilitasi dihitung terpisah."
+      },
+      {
+        "title": "Keamanan dan jejak audit",
+        "text": "Kata sandi terenkripsi, otorisasi di sisi server, lampiran sensitif disimpan privat, dan perubahan penting tercatat."
+      }
+    ],
+    "access_title": "Peran dan batasan akses",
+    "access": [
+      {
+        "name": "Admin Pusat",
+        "text": "Operasional nasional, monitoring, laporan, dan konten nasional."
+      },
+      {
+        "name": "Admin Wilayah",
+        "text": "Supervisi peserta, Satker, dan laporan hanya pada wilayah kewenangan."
+      },
+      {
+        "name": "Admin Satker",
+        "text": "Pendaftaran peserta, episode rehabilitasi, dan pemantauan di Satker sendiri."
+      },
+      {
+        "name": "Pimpinan",
+        "text": "Hanya baca. Melihat data agregat tanpa identitas peserta."
+      },
+      {
+        "name": "Peserta",
+        "text": "Pemantauan mandiri, pembelajaran, komunitas, dan jejaring milik sendiri."
+      },
+      {
+        "name": "Keluarga",
+        "text": "Mengisi Torehan Pena Raja lewat tautan khusus tanpa akses ke area administrasi."
+      }
+    ],
+    "roadmap_title": "Tindak lanjut",
+    "roadmap": [
+      "Pengesahan SOP pengelolaan platform",
+      "Penyiapan akun peserta saat terminasi di seluruh Satker",
+      "Pengembangan jejaring layanan lintas kementerian dan lembaga"
+    ]
+  },
+  {
+    "slug": "insightboard",
+    "type": "study",
+    "theme": "ink",
+    "title": "InsightBoard",
+    "full_title": "Dashboard monitoring aktivitas dan capaian",
+    "category": "Studi kasus",
+    "year": "2026",
+    "status": "Konsep",
+    "role": "Perancang",
+    "subtitle": "Dashboard yang membuat angka penting terbaca dalam sekali lihat.",
+    "description": "Rancangan dashboard dengan kartu indikator, visualisasi sederhana, dan ringkasan yang jelas untuk pembaca yang tidak punya waktu membaca tabel panjang.",
+    "image": "assets/img/project-insightboard.svg",
+    "image_bg": "#e4eafd",
+    "technologies": [
+      "Visualisasi data",
+      "HTML dan CSS",
+      "Desain informasi"
+    ],
+    "facts": [],
+    "problem": [
+      "Dashboard sering penuh grafik tetapi tidak menjawab pertanyaan pembacanya. Pimpinan ingin tahu kondisi terkini dan apa yang perlu diputuskan."
+    ],
+    "solution": [
+      "InsightBoard menempatkan indikator utama di atas, memberi label dan satuan yang jelas, lalu menyediakan rincian hanya ketika dibutuhkan."
+    ],
+    "features": [
+      {
+        "title": "Kartu indikator",
+        "text": "Angka kunci dengan pembanding periode sebelumnya."
+      },
+      {
+        "title": "Status berwarna dengan teks",
+        "text": "Warna tidak pernah menjadi satu-satunya penanda status."
+      },
+      {
+        "title": "Rincian bertahap",
+        "text": "Ringkasan dulu, tabel detail setelahnya."
+      }
+    ],
+    "access": [],
+    "roadmap": []
+  },
+  {
+    "slug": "studiodesk",
+    "type": "study",
+    "theme": "ink",
+    "title": "StudioDesk",
+    "full_title": "Sistem pencatatan pesanan merchandise",
+    "category": "Studi kasus",
+    "year": "2026",
+    "status": "Konsep",
+    "role": "Perancang",
+    "subtitle": "Pesanan kreatif yang tahapnya selalu jelas.",
+    "description": "Studi kasus pencatatan pesanan, tahap produksi, dan status penyelesaian untuk usaha kreatif kecil agar tidak ada pesanan yang terlewat.",
+    "image": "assets/img/project-studiodesk.svg",
+    "image_bg": "#fcf0cd",
+    "technologies": [
+      "Product thinking",
+      "UI/UX",
+      "Desain proses"
+    ],
+    "facts": [],
+    "problem": [
+      "Usaha kecil sering mencatat pesanan lewat chat dan buku catatan. Saat pesanan menumpuk, tahap pengerjaan dan tenggat mudah tertukar."
+    ],
+    "solution": [
+      "StudioDesk memecah pesanan menjadi tahap yang sederhana: diterima, desain, produksi, dan selesai, dengan satu tampilan papan untuk melihat semuanya."
+    ],
+    "features": [
+      {
+        "title": "Papan tahap",
+        "text": "Setiap pesanan bergerak dari kolom ke kolom."
+      },
+      {
+        "title": "Tenggat terlihat",
+        "text": "Pesanan yang mendekati tenggat naik ke atas."
+      },
+      {
+        "title": "Riwayat pesanan",
+        "text": "Catatan perubahan tersimpan untuk pelanggan yang kembali."
+      }
+    ],
+    "access": [],
+    "roadmap": []
+  }
+]
